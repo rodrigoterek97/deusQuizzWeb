@@ -1,44 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<div style="text-align: center">
+
+	<p>
+		<a routerLink="/perguntas">Cadastrar Perguntas</a>&nbsp;
+		<button>Cadastrar Fases</button>&nbsp;
+		<button>Cadastrar Áreas</button>
+	</p>
+
 	<h1>BEM VINDO AO ACADEMIC QUIZZ!</h1>
-	<h2>Aqui você pode cadastrar suas perguntas :) </h2>
-
-	<ul>
-		<li>
-			<span>Área da pergunta:</span>
-			<input type="text" [(ngModel)]="area" required="true">
-		</li>
-		<li>
-			<span>Pergunta:</span>
-			<input type="text" [(ngModel)]="pergunta" required="true">
-		</li>
-
-		<li>
-			<span>Alternativas:</span>
-		</li>
-		<li>
-			<input type="text" [(ngModel)]="alternativa1" required="true">
-			<input type="radio" name="radio" value="1" [(ngModel)]="correta">
-		</li>
-		<li>
-			<input type="text" [(ngModel)]="alternativa2" required="true">
-			<input type="radio" name="radio" value="2" [(ngModel)]="correta">
-		</li>
-		<li>
-			<input type="text" [(ngModel)]="alternativa3">
-			<input type="radio" name="radio" value="3" [(ngModel)]="correta">
-		</li>
-		<li>
-			<input type="text" [(ngModel)]="alternativa4">
-			<input type="radio" name="radio" value="4" [(ngModel)]="correta">
-		</li>
-		<li>
-			<input type="text" [(ngModel)]="alternativa5">
-			<input type="radio" name="radio" value="5" [(ngModel)]="correta">
-		</li>
-
-	</ul>
-
-	<button (click)="enviar()">Enviar</button>
-
 </div>
+
+<router-outlet></router-outlet>
